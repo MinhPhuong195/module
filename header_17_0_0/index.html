@@ -5,598 +5,782 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>SCI FRAMEWORK</title>
     <meta name="Resource-type" content="Document" />
-    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="viewport"
+        content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
 
     <link rel="stylesheet" type="text/css" href="../../media/css/style.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
-    <script src="../../media/dist/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="css/header_17_0_0.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <script src="../../media/js/lib-min.js"></script>
 </head>
-<body>
-  <style>
-    .header_17_0_0_ {
-      font-family: Arial;
-    }
-
+<style>
     a {
-      text-decoration: none;
+        text-decoration: none;
+    }
+    
+
+    .header_17_0_0_box1 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
     }
 
-    .header_17_0_0_ {
-      position: fixed;
-      z-index: 9;
-      width: 100%;
-      top: 0;
-      background: #fff;
-      border-bottom: none;
+    .header_17_0_0_box1-logo {
+        display: none;
     }
-    .header_17_0_0__box ul li {
-      list-style: none;
+
+    @media (max-width: 414px) {
+        .header_17_0_0_box1-logo img {
+            max-width: 100%;
+            width: 220px;
+        }
     }
-    .header_17_0_0__box_1 {
-      height: 48px;
-      color: #878787;
-      border-bottom: 1px solid #f0f1f0;
-      background: #007ac1;;
+
+    @media (max-width: 414px) {
+        .header_17_0_0_box1-logo img {
+            width: 200px;
+        }
     }
-    .header_17_0_0__box_1 .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+
+    @media (max-width: 360px) {
+        .header_17_0_0_box1-logo img {
+            width: 170px;
+        }
     }
-    .header_17_0_0__box_1__logo {
-      display: none;
+
+    .header_17_0_0_box1-Control {
+        display: none;
     }
-    .header_17_0_0__box_1__slogan {
-      line-height: 44px;
-      display: flex;
+
+    @media (max-width: 414px) {
+        .header_17_0_0_box1-Control {
+            display: flex;
+        }
     }
-    .header_17_0_0__box_1__Infor {
-      position: absolute;
-      top: 0;
-      right: 120px;
-      display: flex;
-      height: 44px;
-      font-size: 13px;
-      line-height: 44px;
+
+    .header_17_0_0_box1-Control,
+    .header_17_0_0_box1-Nav {
+        width: 85px;
     }
-    .header_17_0_0__box_1__Infor b {
-      color: #1c8569;
+
+    @media (max-width: 414px) {
+        .header_17_0_0_box1-Nav {
+        width: 44px;
+    }
+    }
+    @media (max-width: 375px) {
+        .header_17_0_0_box1-Control {
+        width: 44px;
+    }
+    }
+
+    /* .header_17_0_0_box1-sp, */
+    .header_17_0_0_box1-dv {
+        width: 30%;
+    }
+    @media (max-width: 1366px) {
+        .header_17_0_0_box1-dv {
+        width: 35%;
+    }
+    }
+    @media (max-width: 1280px) {
+        .header_17_0_0_box1-dv {
+        width: 29%;
+    }
+    }
+    @media (max-width: 1024px) {
+        .header_17_0_0_box1-dv {
+        width: 34%;
+    }
+    }
+    @media (max-width: 768px) {
+        .header_17_0_0_box1-dv {
+            width: 45%;
+        }
+    }
+
+    @media (max-width: 414px) {
+
+        .header_17_0_0_box1-sp,
+        .header_17_0_0_box1-dv {
+            display: none;
+        }
+    }
+
+    .header_17_0_0_box1-ht {
+        width: 60%;
+        text-align: center;
+        color: #fff;
+    }
+
+    @media (max-width: 414px) {
+        .header_17_0_0_box1-ht {
+            display: none;
+        }
+    }
+
+    .header_17_0_0_box1-dv {
+        display: flex;
+    }
+
+    .header_17_0_0_box1-Nav {
+        display: none;
+    }
+
+    @media (max-width: 414px) {
+        .header_17_0_0_box1-Nav {
+            display: block;
+        }
+        .header_17_0_0_box1-search {
+            width: 85px;
+        }
+        .header_17_0_0_box1-dv {
+            width: 100%;
+        }
+    }
+
+    .header_17_0_0_box1-call {
+        background: #1f8ac9;
+        margin-top: 5px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 115px;
+        padding-top: 5px;
+    }
+    @media (max-width: 414px) {
+        .header_17_0_0_box1-call {
+            width: 85px;
+        }
+    }
+    @media (max-width: 320px) {
+        .header_17_0_0_box1-call {
+            width: 35px;
+        }
+    }
+    .header_17_0_0_box1-call p {
+        position: absolute;
+        color: #fff;
+        padding: 0;
+        left: 40px;
+        top: 9px;
+    }
+
+    .header_17_0_0_box1-call img {
+        vertical-align: bottom;
+        width: 100%;
+    }
+
+    .header_17_0_0_box1-search {
+        background: #1f8ac9;
+        margin-top: 5px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 115px;
+        padding: 5px;
+    }
+
+    .header_17_0_0_box1-searchMB {
+        /* background: #067970; */
+        color: #fff;
+        display: inline-block;
+        border-radius: 100%;
+        font-size: 13px;
+        padding: 8px 10px;
+        display: none;
+    }
+
+    .header_17_0_0_box1-mapMB {
+        display: none;
+    }
+
+    .header_17_0_0_box1-mapMB #Layer_1 {
+        fill: #fff;
+        width: 14px;
+        height: 14px;
+    }
+
+    .header_17_0_0_box1-mapMB a {
+        background: #067970;
+        color: #fff;
+        display: block;
+        padding: 5px 8px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .header_17_0_0_box1-Nav {
+        color: #0b80c4;
+        font-size: 35px;
+    }
+
+    @media (max-width: 414px) {
+        .header_17_0_0_box1-Nav {
+            font-size: 30px;
+        }
+    }
+
+    .header_17_0_0_boxTop {
+        height: 50px;
+        background: #0b80c4;
+    }
+
+    .header_17_0_0_box2 {
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+        justify-content: space-around;
+    }
+
+    @media (max-width: 414px) {
+        .header_17_0_0_box2 {
+            display: none;
+            width: 100%;
+            background: #fff;
+            position: fixed;
+            left: 0;
+            top: 140px;
+            z-index: 3;
+            overflow: auto;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+    }
+
+    .header_17_0_0_box2.show {
+        display: block;
+    }
+
+    .header_17_0_0_box2-logo img {
+        max-width: 100%;
+    }
+
+    @media (max-width: 414px) {
+        .header_17_0_0_box2-logo img {
+            max-width: 100%;
+            padding: 0 30px;
+        }
+    }
+
+    @media (max-width: 414px) {
+        .header_17_0_0_box2-logo img {
+            padding: 0 20px;
+            display: none;
+        }
+    }
+
+    .header_17_0_0_box2__menu {
+        width: 75%;
+        display: inherit;
+    }
+
+    @media (max-width: 768px) {
+        .header_17_0_0_box2__menu {
+            width: 90%;
+            justify-content: space-between;
+        }
     }
   
-    .header_17_0_0__box_1__date {
-      padding-right: 20px;
+    @media (max-width: 414px) {
+        .header_17_0_0_box2__menu {
+            width: 100%;
+        }
     }
-    .iconmenu{
-      display: none;
-      color: #0e81c4;
+
+    .header_17_0_0_box2__menu a {
+        font-size: 14px;
+        padding: 35px 18px 30px;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
     }
-   
-    .header_17_0_0__box_2 .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+
+    @media (max-width: 1440px) {
+        .header_17_0_0_box2__menu a {
+        padding: 15px 10px 15px;
+       
     }
-    .header_17_0_0__box_2__logo img {
-      margin: 20px 0 0;
     }
-    .header_17_0_0__box_2__menu {
-      margin: 0;
-      display: inherit;
-      /* padding: 0 50px 0px 250px; */
-      z-index: 9;
-      float: right;
+    @media (max-width: 768px) {
+        .header_17_0_0_box2__menu a {
+            padding: 15px 3px 15px;
+            font-size: 13px;
+       
     }
-    .header_17_0_0__box_2__menu a {
-      font-size: 14px;
-      padding: 35px 15px 30px;
-      margin: 0;
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: bold;
     }
-    .header_17_0_0__box_2__menu .menu-icon {
-      display: none;
+    @media (max-width: 414px) {
+        .header_17_0_0_box2__menu a {
+            padding: 0 15px;
+        }
     }
-    .header_17_0_0__box_2__menu-hover .arr::before {
-      display: none;
-      position: absolute;
-      bottom: 5px;
-      left: 40px;
-      text-align: center;
-      color: #007ac1;
+
+    @media (max-width: 414px) {
+        .header_17_0_0_box2__menu-hover {
+            padding: 10px 0 10px;
+            position: relative;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
     }
-    /* .header_17_0_0__box_2__menu-hover:hover .arr::before {
-      display: block;
-    } */
-    .header_17_0_0__box_2__menu-hover:hover .header_17_0_0__box_2__menu-content {
-      display: block;
+
+    .header_17_0_0_box2__menu-hover a {
+        position: relative;
     }
-    .header_17_0_0__box_2__menu-hover:hover > a {
-      color: #007ac1;
+    @media (max-width: 414px) {
+        .header_17_0_0_box2__menu-hover .arr::before {
+            display: none !important;
+        }
     }
-    .header_17_0_0__box_2__menu-hover:hover.relative {
-      position: relative;
+
+    .header_17_0_0_box2__menu-hover:hover .arr::before,
+    .header_17_0_0_box2__menu-hover:hover .header_17_0_0_box2__menu-content {
+        display: block;
     }
-    .header_17_0_0__box_2__menu-hover:hover.relative .header_17_0_0__box_2__menu-content {
-      top: 40px;
-      right: 0;
-      left: 0;
-      width: 220px;
+    .header_17_0_0_box2__menu a :hover {
+        color: #007ac1;
     }
-    .header_17_0_0__box_2__menu-content {
-      display: none;
-      position: absolute;
-      width: 80%;
-      right: 0px;
-      box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-      top: 50px;
-      background: #fff;
-      padding: 10px 20px;
-      color: #000;
-      border-radius: 8px;
+    .header_17_0_0_box2__menu-hover:hover>a {
+        color: #007ac1;
     }
-    .header_17_0_0__box_2__menu-content ul {
-      list-style: none;
-      padding: 0;
+
+    .header_17_0_0_box2__menu-content {
+        display: none;
+    position: absolute;
+    width: 220px;
+    top: 80px;
+    box-shadow: 0 0 4px rgb(0 0 0 / 20%);
+    background: #fff;
+    padding: 10px 20px;
+    color: #000;
+    border-radius: 3px;
     }
-    .header_17_0_0__box_2__menu-content ul li {
-      border-bottom: 1px dotted #ccc;
-      margin: 0;
-      padding: 8px 0;
-      font-size: 13px;
-      position: relative;
+    .header_17_0_0_box2__menu-content :hover{
+        top: 40px;
+        right: 0;
+        left: 0;
+        width: 220px;
     }
-    .header_17_0_0__box_2__menu-content ul li:last-child {
-      border-bottom: none;
+
+    @media (max-width: 414px) {
+        .header_17_0_0_box2__menu-content {
+            position: initial;
+            width: 100%;
+            border-radius: 0;
+            top: auto;
+            right: auto;
+            margin-top: 10px;
+            padding-top: 0;
+        }
     }
-    .header_17_0_0__box_2__menu-content a {
-      color: #000;
-      transition: 0.1s;
-      padding: 0;
-      text-transform: none;
-      font-weight: 400;
+
+    .header_17_0_0_box2__menu-content ul {
+        list-style: none;
+        padding: 0;
     }
-    .header_17_0_0__box_2__menu-content a:hover {
-      color: #007ac1;
+
+    @media (max-width: 414px) {
+        .header_17_0_0_box2__menu-content ul {
+            padding: 0px;
+            margin: -2px;
+        }
     }
-    .header_17_0_0__box_2_3 {
-      background: rgba(0, 0, 0, 0.8);
-      width: 100%;
-      height: 100%;
-      content: '';
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 2;
-      animation: opac 0.4s;
+
+    .header_17_0_0_box2__menu-content ul li {
+        /* border-bottom: 1px dotted #ccc; */
+        margin: 0;
+        padding: 4px 0;
+        font-size: 13px;
+        position: relative;
     }
-    .header_17_0_0__box_2_3.active {
-      display: block;
+
+    @media (max-width: 414px) {
+        .header_17_0_0_box2__menu-content ul li {
+            border-bottom: none;
+            background-color: #0b80c4;
+            padding: 8px 0px;
+            margin: 4px 0;
+        }
     }
-    .header_17_0_0_ .regist {
-      width: 158px;
-      right: 0;
-      top: -10px;
-      text-transform: uppercase;
-      background: #dcaf47;
-      border-radius: 30px;
-      text-align: center;
-      font-size: 13px;
-      padding: 10px 0;
-      color: #fff;
-      font-weight: 600;
+
+    .header_17_0_0_box2__menu-content ul li:last-child {
+        border-bottom: none;
     }
-    .header_17_0_0_ .regist:hover {
-      background-color: #1c8569;
+
+    .header_17_0_0_box2__menu-content a {
+        color: #000;
+        transition: 0.1s;
+        padding: 0;
+        text-transform: none;
+        font-weight: 400;
     }
-    .header_17_0_0_.menufix {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 9;
-      background: #fff;
-      box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 414px) {
+        .header_17_0_0_box2__menu-content a {
+            padding: 0 15px;
+        }
     }
-    .header_17_0_0_.menufix .header_17_0_0__box_1 {
-      display: none;
+
+    .header_17_0_0_box2__menu-content a:hover {
+        color: #007ac1;;
     }
-    .header_17_0_0_.menufix .header_17_0_0__box_2 {
-      background-color: #fff;
+
+    .header_17_0_0_box2__menu-content h4 {
+        color: #000;
+        font-size: 15px;
+        padding: 5px 0;
+        text-transform: uppercase;
+        border-bottom: 1px dotted #007ac1;;
+        position: relative;
+        margin-bottom: 10px;
+        margin-top: -32px;
     }
-    .header_17_0_0_.menufix .header_17_0_0__box_2__menu__title {
-      color: #000;
+
+    @media (max-width: 414px) {
+        .header_17_0_0_box2__menu-content h4 {
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 12px;
+            border-bottom: transparent;
+            color: #e5c992;
+        }
     }
-    .searchsci{
-      /* position: absolute;
-    top: 5px;
-    right: 116px; */
-    background: #1f8ac9;
+
+    .header_17_0_0_box2__menu-content p {
+        margin-top: 10px;
+    }
+
+    .header_17_0_0_box2__menu-content .row {
+        padding: 15px 25px;
+    }
+
+    @media (max-width: 414px) {
+        .header_17_0_0_box2__menu .menu-icon {
+            display: block;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            color: #666;
+            padding: 10px;
+            text-align: right;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media (max-width: 414px) {
+        .header_17_0_0_box2__menu .icon-plus::before {
+            content: '+';
+            position: absolute;
+            right: 10px;
+        }
+
+        .header_17_0_0_box2__menu .icon-plus.active::before {
+            content: '-';
+        }
+    }
+
+    .header_17_0_0_box2 ul {
+        padding-left: 0;
+    }
+
+    .header_17_0_0_box2 ul li {
+        list-style: none;
+    }
+
+    @media (max-width: 414px) {
+        .header_17_0_0_box2__address {
+            display: none;
+        }
+    }
+
+    .header_17_0_0_box2__address select {
+        padding: 5px 0;
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 414px) {
+        .header_17_0_0_box2 .row>div {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .header_17_0_0_box2-tv {
+        display: none;
+    }
+
+    @media (max-width: 414px) {
+        .header_17_0_0_box2-tv {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .langu{
+            right: 10px;
+        }
+    }
+
+    .header_17_0_0_box2-tv a {
+        background: #067670;
+        color: #fff;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .header_17_0_0_box3 {
+        /* background: rgba(0, 0, 0, 0.6); */
+        width: 100%;
+        height: 100%;
+        content: '';
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        animation: opac 0.4s;
+    }
+
+    .header_17_0_0_box3.act {
+        display: block;
+    }
+    .langu{
+        position: absolute;
+        top: 4px;
+        right: 0;
+        height: 40px;
+        color: #fff;
+        background: #2d9dde;
+        padding: 4px 65px 0px 10px;
+        border-radius: 4px;
+    }
+    @media (max-width: 414px) {
+        .langu{
+        position: absolute;
+        top: 4px;
+        right: 10px;
+        height: 40px;
+        color: #fff;
+        background: #2d9dde;
+        padding: 4px 65px 0px 10px;
+        border-radius: 4px;
+    }
+    }
+    .search{
+        background: #1f8ac9;
     padding: 2px 4px 2px 8px;
     border: 2px;
     height: 30px;
     border-radius: 4px;
-    
-    }
-    .searchimg{
-      position: absolute;
-      top: 4px;
-      right: 35px;
-    }
-    .header_17_0_0__box_1__Langu {
-      position: absolute;
-      top: 0;
-      right: 40px;
-      display: flex;
-      height: 44px;
-      font-size: 13px;
-      line-height: 44px;
-    }
-    .header_17_0_0__box_1__Langu p {
-      position:absolute;
-      color:#fff;
-      margin: -47px 0 0 30px;
-      padding: 0;
-    }
-    .lang {
-      position: absolute;
-    top: 4px;
-    right: 0;
-    height: 35px;
-    color: #fff;
-    background: #2d9dde;
-    padding: 0px 65px 0px 10px;
-    border-radius: 4px;
-}
-    @media (max-width: 768px) {
-      .iconmenu{
-      display: block !important;
-      font-size: 30px;
-      }
-      .header_17_0_0_ {
-        background-color: #fff;
-        height: 90px;
-      }
-      .header_17_0_0__box_1 {
-        border-bottom: none;
-      }
-      .header_17_0_0__box_1 .container {
-        justify-content: center;
-        position: relative;
-      }
-      .header_17_0_0__box_1__logo {
-        text-align: center;
-        width: 100px;
-        margin: 0 auto;
-        position: relative;
-        display: block;
-      }
-      .header_17_0_0__box_1__logo img {
-        position: absolute;
-        top: 10px;
-        left: -40px;
-        height: 70px;
-      }
-      .header_17_0_0__box_1__slogan {
-        display: none;
-      }
-     
-      .header_17_0_0__box_1 .siteHeaderNav {
-        position: absolute;
-        left: 0;
-        color: #1D8371;
-        font-size: 35px;
-        top: 25px;
-      }
-      .header_17_0_0__box_1 .siteHeaderCall {
-        background: #e43c3b url(images/call.png) no-repeat center;
-        width: 40px;
-        height: 40px;
-        border-radius: 4px;
-        position: absolute;
-        right: 5px;
-        top: 25px;
-        z-index: 3;
-      }
-      .header_17_0_0__box_1 .siteHeaderCall img {
-        width: 100%;
-      }
-      .header_17_0_0__box_2 {
-       
-      }
-      .header_17_0_0__box_2 menu.active {
-        display: block;
-        width: 100%;
-        animation: animateleft 0.4s;
-      }
-      .header_17_0_0__box_2 .container {
-        display: block;
-        width: 100%;
-        padding: 0px;
-      }
-      .header_17_0_0__box_2__logo {
-        max-width: 100%;
-    margin: 10px 20px;
-    display: flex;
-    left: 0px;
-    align-items: center;
-    justify-content: space-between;
-      }
-      .header_17_0_0__box_2__logo img {
-        margin: 0;
-      }
-      .header_17_0_0__box_2__logo::after {
-        display: none;
-      }
-      .header_17_0_0__box_2__menu {
-        float: none;
-        display: block;
-        padding: 20px 0px;
-        width: 30%;
-        display: none;
-      }
-      .header_17_0_0__box_2__menu :active {
-        display: block;
-    animation: animateleft 0.4s;
-
-      }
-      .header_17_0_0__box_2__menu a {
-        padding: 0 15px;
-      }
-      .header_17_0_0__box_2__menu-hover {
-        padding: 10px 0 10px;
-        position: relative;
-      }
-      .header_17_0_0__box_2__menu-hover:hover {
-        position: relative;
-      }
-      .header_17_0_0__box_2__menu-hover:hover .header_17_0_0__box_2__menu-content {
-        display: none;
-      }
-      .header_17_0_0__box_2__menu-hover:hover.relative {
-        position: relative;
-      }
-      .header_17_0_0__box_2__menu-hover:hover.relative .header_17_0_0__box_2__menu-content {
-        top: 10px;
-        right: 0;
-        left: 0;
-        width: 100%;
-      }
-      .header_17_0_0__box_2__menu-hover:hover.relative .header_17_0_0__box_2__menu-content ul li {
-        border-bottom: none;
-        margin: 5px 0 5px 0;
-      }
-      .header_17_0_0__box_2__menu-hover:hover > a {
-        color: #000;
-      }
-      .header_17_0_0__box_2__menu-hover .header_17_0_0__box_2__menu-content {
-        top: 10px;
-        box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-        padding: 7px 25px;
-      }
-      .header_17_0_0__box_2__menu-content {
-        position: inherit;
-        top: 0;
-        right: 0;
-        border-radius: 0;
-        width: 100%;
-        padding: 5px 0px;
-      }
-      .header_17_0_0__box_2__menu-content a {
-        color: #000;
-        background-color: #eee;
-      }
-      .header_17_0_0__box_2__menu-content .mntt {
-        padding: 3px 10px;
-        border-bottom: none;
-        color: #fff;
-      }
-      .header_17_0_0__box_2__menu-content ul {
-        padding: 0px;
-        margin: -2px;
-      }
-      .header_17_0_0__box_2__menu-content ul li {
-        border-bottom: none;
-        background-color: #eeee;
-        padding: 8px 0px;
-        margin: 4px 0;
-      }
-    
-      .header_17_0_0__box_2 .menu-icon {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        padding: 10px;
-        width: 100%;
-        height: 100%;
-        text-align: right;
-      }
-    
-      .header_17_0_0_.menufix .header_17_0_0__box_1 {
-        display: block;
-      }
-      .header_17_0_0_.menufix .header_17_0_0__box_2 {
-        background-color: #fff;
-      }
-      .header_17_0_0_.menufix .header_17_0_0__box_2__menu__title {
-        color: #000;
-      }
-      .header_17_0_0_ .hide-img {
-        display: none;
-      }
-      .header_17_0_0_ .hide-img img {
-        width: 100%;
-      }
-      .header_17_0_0_ .header_17_0_0__box_2__menu-hover {
-        position: relative;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-      }
-      .header_17_0_0_ .menu-icon {
-        display: block;
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        color: #666;
-        padding: 10px;
-        text-align: right;
-        width: 100%;
-        height: 100%;
-      }
-      .header_17_0_0_ .row > div {
-        padding-left: 0;
-        padding-right: 0;
-      }
-      .header_17_0_0_ .row p {
-        margin: 0;
-      }
     }
     @media (max-width: 414px) {
-      .header_17_0_0__box_1__logo img {
-        top: 20px;
-        left: -40px;
-        height: 50px;
-      }
-      .header_17_0_0__box_1 .siteHeaderCall {
-        right: 10px;
-      }
-      .header_17_0_0__box_1 .siteHeaderNav {
-        left: 10px;
-      }
-     
+        .search{
+            width: 110px;
+        }
     }
-    @media (max-width: 320px) {
-      .header_17_0_0_ {
-        height: 80px;
-      }
-      .header_17_0_0__box_1__Langu {
-        right: 20px;
-      }
-      .header_17_0_0__box_1__Infor {
-        right: 100px;
-      }
+    .header_17_0_0_box11{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px 0;
     }
-   
+    .header_17_0_0_box11 img{
+        display: none;
+    }
+    @media (max-width: 414px) {
+        .header_17_0_0_box11 img{
+            display: block;
+        }
+    }
+    /*# sourceMappingURL=header_17_0_0.css.map */
+</style>
 
-    /*# sourceMappingURL=style.css.map */
-
-  </style>
-  <header class="header_17_0_0_ ">
-        <div class="header_17_0_0__box">
-            <div class="header_17_0_0__box_1">
-                <div class="container">
-                    <div class="header_17_0_0__box_1__Infor">
-                        <div class="header_17_0_0__box_1__date">
-                          <input class="searchsci" type="text">
-                          <i class="searchimg"><img width="20" height="20" src="images/search.svg"></i>
+<body>
+    <header class="header_17_0_0">
+        <div class="header_17_0_0_boxTop">
+            <div class="container">
+                <div class="header_17_0_0_box1">
+                    <div class="header_17_0_0_box1-logo">
+                        <a href="/">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header_17_0_0_box1-Control">
+                        <div class="header_17_0_0_box1-searchMB">
+                            <a class="modal-btn" data-modal="search">
+                                <img style="width:16px" src="images/search-2.svg">
+                            </a>
+                        </div>
+                        <div class="header_17_0_0_box1-mapMB">
+                            <a href="#chi-nhanh">
+                                <svg id="Layer_1" enable-background="new 0 0 512 512" height="15" viewBox="0 0 512 512"
+                                    width="15" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path class="header_17_0_0-box1-map"
+                                            d="m407.579 87.677c-31.073-53.624-86.265-86.385-147.64-87.637-2.62-.054-5.257-.054-7.878 0-61.374 1.252-116.566 34.013-147.64 87.637-31.762 54.812-32.631 120.652-2.325 176.123l126.963 232.387c.057.103.114.206.173.308 5.586 9.709 15.593 15.505 26.77 15.505 11.176 0 21.183-5.797 26.768-15.505.059-.102.116-.205.173-.308l126.963-232.387c30.304-55.471 29.435-121.311-2.327-176.123zm-151.579 144.323c-39.701 0-72-32.299-72-72s32.299-72 72-72 72 32.299 72 72-32.298 72-72 72z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </a>
                         </div>
                     </div>
-                    <div class="header_17_0_0__box_1__Langu">
-                      <a class="lang"> 
-                      
-                        <img src="images/en.jpg">
-                        <p>English</p>
-                      </a>
-                     
-
+                    <div class="header_17_0_0_box1-sp">
+                    </div>
+                    <div class="header_17_0_0_box1-dv">
+                        <div class="header_17_0_0_box1-call">
+                            <a class="langu">
+                                <img src="images/en.jpg"><p>English </p>
+                            </a>
+                        </div>
+                        <div class="header_17_0_0_box1-search">
+                            <input class="search" type="text">
+                            <a>
+                                <img src="images/search.svg">
+                            </a>
+                        </div>
                     </div>
                    
                 </div>
-            </div>
-            <div class="header_17_0_0__box_2 menu active ">
-                <div class="container">
-                    <a href="/" class="header_17_0_0__box_2__logo">
+                <div class="header_17_0_0_box11">
+                    <a href="/" class="header_17_0_0_box11-logo">
                         <img src="images/logo.png">
-                        <b class="iconmenu siteHeaderNav">☰</b>
                     </a>
-                    <ul class="header_17_0_0__box_2__menu siteHeaderNav">
-                        <li class="header_17_0_0__box_2__menu-hover">
-                            <a class="arr">Trang chủ</a> <i class="menu-icon icon-plus  "></i>
-                        </li>
-                        <li class="header_17_0_0__box_2__menu-hover relative">
-                            <a class="arr">Giới thiệu</a> <i class="menu-icon icon-plus   "></i>
-                            <div class="header_17_0_0__box_2__menu-content">
-                                <article class="row">
-                                    <div class="col-xl-12">
-                                            <ul>
-                                                <li> <a href=''>Giới thiệu chung</a></li>
-                                                <li><a href=''>Lịch sử phát triển</a></li>
-                                                <li><a href=''>Tầm nhìn, sứ mệnh</a></li>
-                                                <li><a href=''>Triết lý kinh doanh</a></li>
-                                            </ul>
-                                    </div>
-                                </article>
-                            </div>
-                        </li>
-                        <li class="header_17_0_0__box_2__menu-hover relative">
-                            <a class="arr">Lĩnh vực kinh doanh </a> <i class="menu-icon icon-plus  "></i>
-                            <div class="header_17_0_0__box_2__menu-content">
-                                <article class="row">
-                                    <div class="col-xl-12 ">
-                                            <ul>
-                                                <li> <a href=''>Thẩm mỹ</a></li>
-                                                <li><a href=''>Nha khoa</a></li>
-                                                <li><a href=''>Truyền thông</a></li>
-                                                <li><a href=''>Thiết bị y tế</a></li>
-                                            </ul>
-                                        
-                                    </div>
-                                </article>
-                            </div>
-                        </li>
-                        <li class="header_17_0_0__box_2__menu-hover relative">
-                            <a class="arr">Đối tác </a> <i class="menu-icon icon-plus "></i>
-                        </li>
-                        <li class="header_17_0_0__box_2__menu-hover relative">
-                            <a class="arr">Tin tức </a> <i class="menu-icon icon-plus  "></i>
-                        </li>
-                        <li class="header_17_0_0__box_2__menu-hover relative">
-                            <a class="arr">Tuyển dụng</a> <i class="menu-icon icon-plus  "></i>
-                            <div class="header_17_0_0__box_2__menu-content">
-                                <article class="row">
-                                    <div class="col-xl-12 ">
-                                            <ul>
-                                                <li>
-                                                    <a href="">Môi trường làm việc</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Cơ hội nghề nghiệp</a>
-                                                </li>
-                                            </ul>
-                                    </div>
-                                </article>
-                            </div>
-                        </li>
-                        <li class="header_17_0_0__box_2__menu-hover relative">
-                          <a class="arr">Liên hệ</a> <i class="menu-icon icon-plus  "></i>
-                      </li>
-                       
-                    </ul>
+                    <div id="toggle" class="header_17_0_0_box1-Nav">☰</div>
                 </div>
+                
             </div>
         </div>
+        <div class="container">
+            <div class="header_17_0_0_box2" id="headerMenu">
+                <a href="/" class="header_17_0_0_box2-logo">
+                    <img src="images/logo.png">
+                </a>
+                <ul class="header_17_0_0_box2__menu">
+                    <li class="header_17_0_0_box2__menu-hover">
+                        <a href="" class="arr">Trang chủ </a> 
+                    </li>
+                    <li class="header_17_0_0_box2__menu-hover">
+                        <a class="arr">Giới thiệu</a>
+                        <div class="header_17_0_0_box2__menu-content">
+                            <div class="col-xl-12 ">
+                                <ul>
+                                    <li>
+                                        <a href="">Hệ thống chuỗi cơ sở</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Sứ mệnh làm đẹp</a>
+                                    </li>
+                                    <li>
+                                      <a href="">Đội ngũ bác sĩ</a>
+                                  </li>
+                                </ul>
+                        </div>
+                        </div>
+                    </li>
 
+                    <li class="header_17_0_0_box2__menu-hover">
+                        <a class="arr">Lĩnh vực kinh doanh</a>
+                        <div class="header_17_0_0_box2__menu-content">
+                            <div class="row">
+                                <div class="col-xl-12 ">
+                                    <ul>
+                                        <li> <a href=''>Thẩm mỹ</a></li>
+                                        <li><a href=''>Nha khoa</a></li>
+                                        <li><a href=''>Truyền thông</a></li>
+                                        <li><a href=''>Thiết bị y tế</a></li>
+                                    </ul>
+                                
+                            </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header_17_0_0_box2__menu-hover">
+                        <a class="arr">Đối tác</a>
+                    </li>
+                    <li class="header_17_0_0_box2__menu-hover">
+                        <a class="arr">Tin tức</a>
+                    </li>
+                    <li class="header_17_0_0_box2__menu-hover">
+                        <a class="arr">Tuyển dụng</a> 
+                        <div class="header_17_0_0_box2__menu-content">
+                            <div class="row">
+                                <div class="col-xl-12 ">
+                                    <ul>
+                                        <li>
+                                            <a href="">Môi trường làm việc</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Cơ hội nghề nghiệp</a>
+                                        </li>
+                                    </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header_17_0_0_box2__menu-hover">
+                        <a class="arr">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header_17_0_0_box3"></div>
     </header>
     <script>
-      function layoutHandler() {
-          window.innerWidth < 1025 && $(".mn1,.mn2,.mn3,.mn4,.mn5,.mn6,.mn7,.mn8,.mn9").click(function() {
-              $(this).parent().find(".header_17_0_0__box_2__menu-content").toggle()
-          }), window.innerWidth < 1025 && $(".LP .siteHeaderMain a").click(function() {
-              $(".LP .siteHeaderMain").removeClass("active"), $(".siteHeader-bg").removeClass("active")
-          })
-      }
-      layoutHandler();
-      
-      $(".header_17_0_0__box_2__menu-hover .menu-icon").click(function() {
-          $(this).parent().find(".header_17_0_0__box_2__menu-content").toggle(), 1 == $(this).hasClass("icon-plus") ? ($(this).addClass("icon-minus"), $(this).removeClass("icon-plus")) : ($(this).removeClass("icon-minus"), $(this).addClass("icon-plus"))
-      });
-      $(".siteHeaderNav").click(function() {
-          $(".header_17_0_0__box_2").addClass("active"), $(".header_17_0_0__box_3").addClass("active")
-      }); 
-      $(".header_17_0_0__box_3").click(function() {
-          $(".header_17_0_0__box_2").removeClass("active"), $(".header_17_0_0__box_3").removeClass("active")
-      }); 
-  </script>
+        const iconMenu = document.getElementById("toggle");
+        const menus = document.getElementsByClassName("header_17_0_0_box2");
+        const headerMenu = document.getElementById("headerMenu");
+        const menuBg = document.getElementsByClassName("header_17_0_0_box3");
+        const iconSubMenu = document.getElementsByClassName("menu-icon");
+        var i;
+        for (i = 0; i < iconSubMenu.length; i++) {
+            iconSubMenu[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+
+        Element.prototype.hasClass = function (className) {
+            return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
+        };
+
+        iconMenu.addEventListener("click", function () {
+            for (const bg of menuBg) {
+                if (bg.hasClass("act")) {
+                    bg.classList.remove("act");
+                }
+                else {
+                    bg.classList.add("act");
+                }
+            }
+        });
+
+        for (const bg of menuBg) {
+            bg.addEventListener("click", function () {
+                bg.classList.remove("act");
+                headerMenu.classList.toggle("show");
+                if (iconMenu.hasClass("on")) {
+                    iconMenu.classList.remove("on");
+                }
+            });
+        }
+
+        iconMenu.addEventListener("click", function () {
+            iconMenu.classList.toggle("on");
+        });
+
+        iconMenu.addEventListener("click", function () {
+            for (const menu of menus) {
+                menu.classList.toggle("show");
+            }
+        });
+
+    </script>
 </body>
+
 </html>
